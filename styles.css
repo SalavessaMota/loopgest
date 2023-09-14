@@ -1,0 +1,33 @@
+/* Header */
+#main-header {
+    position: fixed;
+    top: 5%;
+    width: 100vw;
+    height: auto;
+    background-color: transparent;
+    z-index: 100;
+  }
+  
+  #main-header nav {
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+  #logo {
+    width: 10em;
+    margin-left: 5%;
+  }
+  
+  #nav-buttons {
+    margin-right: 5%;
+  }
+  
+  #section1 img {
+    width: 100vw;
+    height: auto;
+  }
+
+  #section2 img {
+    width: 100vw;
+    height: auto;
+  }
