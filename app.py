@@ -65,9 +65,10 @@ def send_email():
         mail.send(msg)
 
         flash('Mensagem enviada e dados armazenados com sucesso!')
-        return redirect("/")
+        return redirect("https://loopgest-salavessamota.vercel.app/")
 
     return 'Algo deu errado'
 
 if __name__ == '__main__':
     app.run(debug=True)
+
