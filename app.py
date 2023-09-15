@@ -55,7 +55,7 @@ def send_email():
         db.commit()
 
         # Enviar email
-        msg = Message("Novo contato", sender='seuemail@gmail.com', recipients=['destino@gmail.com'])
+        msg = Message("Novo contato", sender='nunosalavessamota@gmail.com', recipients=['nunosalavessamota@gmail.com'])
         msg.body = f'''
         De: {nome}, <{email}>
         Telefone: {telefone}
@@ -65,7 +65,7 @@ def send_email():
         mail.send(msg)
 
         flash('Mensagem enviada e dados armazenados com sucesso!')
-        return redirect(url_for('index'))
+        return redirect("/")
 
     return 'Algo deu errado'
 
