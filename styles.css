@@ -1,33 +1,95 @@
-/* Header */
-#main-header {
-    position: fixed;
-    top: 5%;
-    width: 100vw;
-    height: auto;
-    background-color: transparent;
-    z-index: 100;
-  }
-  
-  #main-header nav {
-    display: flex;
-    justify-content: space-between; 
-  }
-  
-  #logo {
-    width: 10em;
-    margin-left: 5%;
-  }
-  
-  #nav-buttons {
-    margin-right: 5%;
-  }
-  
-  #section1 img {
-    width: 100vw;
-    height: auto;
-  }
+body{
+  text-align: center;
+  text-shadow: 2px 2px 4px #000, -2px -2px 4px #000, 2px -2px 4px #000, -2px 2px 4px #000;
+  color: white;
+}
 
-  #section2 img {
-    width: 100vw;
-    height: auto;
-  }
+#main-header {
+  position: fixed;
+  top: 5%;
+  width: 100vw;
+  height: auto;
+  background-color: transparent;
+  z-index: 100;
+  
+}
+
+#main-header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-button{
+  text-shadow: 2px 2px 4px #000, -2px -2px 4px #000, 2px -2px 4px #000, -2px 2px 4px #000;
+}
+
+
+#logo {
+  width: 10em;
+  margin-left: 5%;
+}
+
+#home {
+  position: relative;
+  background-image: url("images/fundo.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-center h1{
+  font-size: 5em;
+}
+
+.section {
+  position: relative;
+  background-image: url("images/fundo1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  color: white;
+}
+
+#quemSomos{
+  align-items: center;
+  justify-content: center;
+  background-image: url("images/fundo1.jpg");
+}
+
+#comoFunciona{
+  align-items: center;
+  justify-content: center;
+  background-image: url("images/fundo2.jpg");
+}
+
+#contacto{
+  background-image: url("images/fundocontacto.jpg");
+}
+
+#form-container {
+  width: 40%;  /* Ajuste para o tamanho que você quer */
+  height: 60%;
+  margin-right: 10%;  /* Distância da margem direita */
+  margin-left: auto;  /* Alinhar automaticamente à direita */
+}
+
+/* Aumentar o tamanho dos campos do formulário */
+.form-group input, 
+.form-group textarea {
+  width: 100%;  /* Ocupar todo o espaço disponível */
+  padding: 10px;  /* Adiciona um pouco de espaço interno para o texto */
+}
+
+/* Adicionar algum espaço ao redor dos rótulos para melhor legibilidade */
+.form-group label {
+  margin-bottom: 1em;
+}
