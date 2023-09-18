@@ -12,9 +12,9 @@
       <nav>
         <img class="nav-button" data-target="home" id="logo" src="static/images/loopgestLogo.png">
         <div id="nav-buttons">
-          <button class="nav-button fs-3 bg-transparent border border-0 mx-5 fw-bold text-white" data-target="quemSomos">Quem Somos</button>
-          <button class="nav-button fs-3 bg-transparent border border-0 mx-5 fw-bold text-white" data-target="comoFunciona">Como funciona?</button>
-          <button class="nav-button fs-3 bg-transparent border border-0 mx-5 fw-bold text-white" data-target="contacto">Quero receber uma proposta!</button>
+          <button class="nav-button bg-transparent border border-0 mx-5 fw-bold text-white" data-target="quemSomos">Quem Somos</button>
+          <button class="nav-button bg-transparent border border-0 mx-5 fw-bold text-white" data-target="comoFunciona">Como funciona?</button>
+          <button class="nav-button bg-transparent border border-0 mx-5 fw-bold text-white" data-target="contacto">Quero receber uma proposta!</button>
         </div>
       </nav>
     </header>
@@ -39,7 +39,7 @@
       <div id="form-header">
         <h2>Introduza os dados e será contactado</h2>
       </div>
-      <form id="contact-form" onsubmit="sendEmail(event); reset(); return false">
+      <form id="contact-form" onsubmit="sendEmail(event); reset(); return false;">
         <div class="form-group">
           <label for="name">Nome:</label>
           <input type="text" id="name" name="name" class="form-control" required autocomplete="name">
@@ -67,7 +67,7 @@
     </div>
   </section>
 
-  <script src="/static/script.js"></script>
+  <script src="static/script.js"></script>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
