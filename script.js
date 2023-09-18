@@ -18,7 +18,7 @@ function sendEmail(event){
   Email.send({
       Host : "smtp.gmail.com",
       Username : "nunosalavessamota@gmail.com",
-      Password : "Googlegoogle1",
+      Password : "",
       To : 'nunosalavessamota@gmail.com',
       From : document.getElementById("email").value,
       Subject : "Novo pedido de proposta",
