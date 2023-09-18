@@ -21,12 +21,14 @@ body{
 
 .nav-button{
   text-shadow: 2px 2px 4px #000, -2px -2px 4px #000, 2px -2px 4px #000, -2px 2px 4px #000;
+  font-size: 1.5em;
 }
 
 
 #logo {
   width: 10em;
   margin-left: 5%;
+  object-fit: contain;
 }
 
 #home {
@@ -76,21 +78,45 @@ body{
 }
 
 #form-container {
-  width: 40%;  /* Ajuste para o tamanho que você quer */
+  width: 40%;
   height: 60%;
-  margin-right: 10%;  /* Distância da margem direita */
-  margin-left: auto;  /* Alinhar automaticamente à direita */
+  margin-right: 10%;
+  margin-left: auto;
 }
 
-/* Aumentar o tamanho dos campos do formulário */
+
 .form-group input,
 .form-group textarea {
-  width: 100%;  /* Ocupar todo o espaço disponível */
-  padding: 10px;  /* Adiciona um pouco de espaço interno para o texto */
+  width: 100%;
+  padding: 10px;
 }
 
-/* Adicionar algum espaço ao redor dos rótulos para melhor legibilidade */
 .form-group label {
   margin-top: 1em;
 }
 
+/* Small devices (tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+  .text-center h1{
+    font-size: 2em;
+  }
+
+  .nav-button{
+    font-size: 1em;
+  }
+
+  #form-container {
+    width: 80vw;
+  }
+
+  #form-header h2{
+    font-size: 0.7em;
+  }
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) { }
+
+/* Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {  }
